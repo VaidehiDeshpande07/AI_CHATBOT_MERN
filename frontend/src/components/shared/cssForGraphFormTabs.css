@@ -1,0 +1,137 @@
+
+
+  /* Global Styling */
+  body {
+      background: #0b1622;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      
+  }
+
+  /* Page Container */
+  .page-container {
+      max-width: 1000px; /* Increased width for better layout */
+      margin: auto;
+      text-align: center;
+      margin-top: 50px;
+      padding: 40px;
+  }
+
+  /* Section Heading */
+  .heading {
+      font-size: 28px;
+      font-weight: 700;
+      color: #00C49F;
+      margin-bottom: 25px;
+  }
+
+  /* Card Style */
+  .card {
+      background: #1e2a38;
+      padding: 30px;  /* Increased padding */
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Graph Container (Larger) */
+  .graph-container {
+      width: 90%;
+      height: 500px; /* Increased height */
+      margin: 30px auto;
+      background: #0d1a26;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Forms (Larger) */
+  .form-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 80%;
+      margin: auto;
+  }
+
+  .form-container input,
+  .form-container textarea {
+      background: #0d1a26;
+      border: 2px solid #00C49F;
+      color: white;
+      padding: 15px; /* Bigger padding */
+      border-radius: 8px;
+      font-size: 18px;
+  }
+
+  .form-container button {
+      background: #00C49F;
+      color: black;
+      padding: 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+  }
+
+  /* Tabs (Bigger - 2 per row, 4 in total) */
+  .tabs-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px auto;
+  }
+
+  .tab-button {
+      width: 45%;  /* Ensures 2 tabs per row */
+      height: 180px;  /* Increased height */
+      font-size: 2rem; /* Bigger font */
+      font-weight: bold;
+      padding: 25px;
+      cursor: pointer;
+      border: 2px solid #00C49F;
+      background: #12202f;
+      color: white;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: 0.3s;
+  }
+
+  .tab-button.active {
+      color: black;
+      background: #00C49F;
+      border: 3px solid #008066;
+  }
+
+  .tab-button:hover {
+      background: #008066;
+      color: white;
+  }
+
+  /* Tab Content */
+  .tab-content {
+      width: 100%;
+      font-size: 1.8rem;
+      padding: 35px;
+      background: rgba(0, 123, 255, 0.1);
+      border-radius: 12px;
+      text-align: center;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+      .tab-button {
+          width: 100%;  /* Full width for mobile */
+          height: 140px;
+      }
+
+      .graph-container {
+          height: 400px; /* Slightly smaller on mobile */
+      }
+  }
+
+

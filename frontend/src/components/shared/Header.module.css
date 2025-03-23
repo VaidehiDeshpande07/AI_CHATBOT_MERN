@@ -1,0 +1,152 @@
+/* .parent {
+	position: fixed;
+	top: 0;
+	left: 0;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 0.5rem 1.2rem 0.5rem 1rem;
+    margin-top: 10px;
+    z-index: 2;
+    
+} */
+.parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh; /* Increased height */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; /* Ensures content is properly aligned */
+    box-sizing: border-box;
+    padding: 0.5rem 1.2rem 0.5rem 1rem; /* Increased padding on the sides to make background wider */
+    z-index: 2;
+    background-color: #1e2a38; /* Dark background color */
+    color: white; /* White text color to match with dark background */
+}
+
+.parent > div:nth-child(1){
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.parent > div:nth-child(2){
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ /* Account Dropdown */
+ .accountDropdown {
+    position: relative;
+}
+
+/* Account Button */
+.accountButton {
+    background-color: #00fffba2; /* Kept original color */
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.accountButton:hover {
+    background-color: #00fffb; /* Slightly brighter on hover */
+    box-shadow: 0 4px 8px rgba(0, 255, 251, 0.3);
+}
+
+/* Dropdown Menu */
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #1e2a38;
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 180px;
+    box-shadow: 0px 6px 12px rgba(0, 255, 251, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Show Dropdown */
+.accountDropdown:hover .dropdownMenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Dropdown Items */
+.dropdownItem {
+    padding: 12px 16px;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdownItem:hover {
+    background: #00fffb9f;
+    color: black;
+}
+
+
+.accountButton {
+    background-color: #00fffba2;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem; /* Adjusted size */
+    font-weight: normal; /* Removed bold */
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.dropdownItem {
+    padding: 10px;
+    display: block;
+    color: black;
+    cursor: default;
+    background-color: #00fffb9f;
+}
+
+
+/* Existing styles for navLinks */
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  /* Styling for the new button on the left side */
+  .newButton {
+    background-color: #00ced1;
+    color: black;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-right: 2px; /* To add space between the button and "Go To Chat" link */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newButton:hover {
+    background-color: #00fffb;
+  }
+  

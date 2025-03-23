@@ -1,0 +1,112 @@
+.parent {
+	/* scroll-snap-type: y mandatory; */
+	overflow-y: scroll;
+	height: 100vh;
+	width: 100%;
+}
+
+.parent h1 {
+	font-weight: 1000;
+	font-size: 3rem;
+}
+
+.parent h2 {
+	color: #00ced1;
+}
+
+.parent p {
+	font-weight: 300;
+	font-size: 1.3rem;
+	word-spacing: 0.4rem;
+	line-height: 2;
+}
+
+.highlight {
+	color: #00ced1 !important;
+	margin: 0;
+}
+
+.btn {
+	background-color: #00ced1;
+    padding: 1rem 2rem;
+    color:black;
+    border-radius: 10px;
+    margin-top:2rem;
+    font-size:1.2rem;
+    font-weight:400
+}
+
+.ui1 {
+	max-width: 100%;
+}
+
+.ui2 {
+	width: 80%;
+}
+
+
+/* FAQ Section */
+.faqSection {
+    margin-top: 50px;
+    padding: 60px 40px; /* Increased padding for more space */
+    background: #1e2a38;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 1200px; /* Increased max width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FAQ Heading */
+.faqHeading {
+    font-size: 32px; /* Increased font size */
+    color: #00C49F;
+    margin-bottom: 30px; /* More spacing between heading and FAQ items */
+}
+
+/* FAQ Container */
+.faqContainer {
+    max-width: 1000px; /* Increased max width */
+    margin: auto;
+    text-align: left;
+}
+
+/* FAQ Item */
+.faqItem {
+    background: #0d1a26;
+    padding: 20px 30px; /* Increased padding for larger FAQ items */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Increased margin between items */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #00C49F;
+    font-size: 18px; /* Increased font size */
+}
+
+/* FAQ Question */
+.faqQuestion {
+    font-size: 20px; /* Larger font size for the question */
+    font-weight: bold;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+/* FAQ Answer */
+
+
+
+/* Sticky Footer */
+.footer {
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    background: #0b1622;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 2px solid #00C49F;
+}
+
